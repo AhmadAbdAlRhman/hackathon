@@ -16,7 +16,7 @@ const User = sequelize.define("user", {
   },
   name: {
     type: Sequelize.STRING,
-    allowNull: false,
+    allowNull: true,
   },
   email: {
     type: Sequelize.STRING,
@@ -33,7 +33,7 @@ const User = sequelize.define("user", {
   },
   age: {
     type: Sequelize.INTEGER,
-    allowNull: false,
+    allowNull: true,
   },
   weight: {
     type: Sequelize.INTEGER,
@@ -45,11 +45,11 @@ const User = sequelize.define("user", {
   },
   Gender: {
     type: Sequelize.STRING,
-    allowNull: false,
+    allowNull: true,
   },
   description: {
     type: Sequelize.STRING,
-    allowNull: false,
+    allowNull: true,
   },
   sports: {
     type: Sequelize.STRING,
